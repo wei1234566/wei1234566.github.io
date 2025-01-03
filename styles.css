@@ -1,0 +1,91 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 内容容器：垂直居中 */
+.center-container {
+  text-align: center;
+}
+
+/* 标题样式 */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 按钮样式 */
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 20px 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* 图片预览区域 */
+.image-preview {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 图片之间的间距 */
+}
+
+.image-preview img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover; /* 确保图片裁剪为正方形 */
+  border: 2px solid #ffffff;/*边框*/
+  border-radius: 5px; /* 圆角边框 */
+  transition: transform 0.3s ease;
+}
+
+.image-preview img:hover {
+  transform: scale(1.2); /* 放大动画 */
+}
+/* 首页内容容器样式 */
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fade-in 0.5s ease-out; /* 入场动画 */
+}
+
+/* 首页动画定义 */
+@keyframes fade-in {
+  from {
+    transform: translateY(50px); /* 从下方滑入 */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 按钮交互效果也可以稍微增强 */
+.home-container .btn {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-container .btn:hover {
+  transform: scale(1.05); /* 鼠标悬停放大 */
+}
+
+

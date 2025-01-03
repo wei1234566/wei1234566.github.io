@@ -1,0 +1,239 @@
+/* 整体布局 */
+.profile-container {
+    padding: 20px;
+    animation: slide-up 0.5s ease-out; /* 页面加载动画 */
+  }
+  
+  /* 导航栏样式 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left .interest-label {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .nav-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-left a:hover {
+    background-color: white;
+    color: #007BFF;
+  }
+  
+  .btn-back {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #343a40;
+    transform: scale(1.05);
+  }
+  
+  /* 内容部分样式 */
+  .content {
+    margin-top: 40px;
+  }
+  
+  .content-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* 标题样式，紧贴顶部 */
+.content-box h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0; /* 取消标题上方的空隙 */
+    margin-bottom: 10px;
+  }
+  
+  .content-box h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .content-box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* 图片画廊 */
+  .image-gallery {
+    display: flex;
+    justify-content: flex-start; /* 靠左排列 */
+    gap: 23px;
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    width: 300px; /* 增大图片 */
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.2); /* 放大效果 */
+  }
+  
+  /* 兴趣爱好部分 */
+  #interests {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #interests p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* 页面加载动画 */
+  @keyframes slide-up {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+/* 图标和文字对齐 */
+.logo-icon {
+    width: 40px; /* 设置图标大小 */
+    height: auto;
+    vertical-align: middle; /* 使图标和文字垂直居中对齐 */
+    margin-right: 10px; /* 给图标和文字之间添加间距 */
+  }
+
+  /* 返回顶部按钮 */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;  /* 距离底部20px */
+    right: 20px;   /* 距离右侧20px */
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    opacity: 0; /* 初始状态隐藏按钮 */
+    visibility: hidden; /* 初始状态隐藏按钮 */
+    pointer-events: none; /* 防止点击 */
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* 鼠标悬停时放大按钮 */
+  }
+  
+  /* 当页面滚动到底部时显示按钮 */
+  .show-btn {
+    opacity: 1; /* 显示按钮 */
+    visibility: visible; /* 显示按钮 */
+    pointer-events: auto; /* 启用按钮点击 */
+  }
+
+/* 按钮通用样式（与“返回首页”按钮一致）2024/11/27 23:45 */
+.button-link {
+  display: inline-block;           /* 让链接表现得像块级元素 */
+  padding: 10px 20px;              /* 内边距，按钮大小与返回首页一致 */
+  background-color: #007bff;       /* 蓝色背景 */
+  color: white;                    /* 白色字体 */
+  text-decoration: none;           /* 去除下划线 */
+  border-radius: 5px;              /* 圆角效果 */
+  font-size: 16px;                 /* 字体大小与返回首页一致 */
+  text-align: center;              /* 文字居中 */
+  cursor: pointer;                 /* 鼠标指针 */
+  transition: background-color 0.3s ease; /* 背景色变化过渡 */
+}
+
+.button-link:hover {
+  background-color: #0056b3;       /* 悬停时背景色变暗 */
+}
+
+
+
+
+
+
+/* 使用 Flexbox 来调整图片和内容的位置 (解决底部联系按钮太长问题)*/
+.content-box {
+  display: flex;
+  flex-wrap: wrap;      /* 允许内容换行 */
+  justify-content: center; /* 图片居中对齐 */
+  align-items: flex-start;  /* 内容顶部对齐 */
+}
+
+
+.image-container {
+  text-align: center; /* 设置容器内内容居中 */
+}
+
+.image-container img {
+  display: inline-block; /* 使图片水平排列 */
+  margin: 1px 66px; /* 设置图片间距 */
+  height: 200px; /* 图片高度 */
+  width: 200px; /* 图片宽度 */
+}
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+   
+  
+  

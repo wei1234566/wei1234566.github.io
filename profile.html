@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简介2</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <span class="interest-label">兴趣爱好：</span>
+        <a href="#about">骑行</a>
+        <a href="#projects">看电影</a>
+        <a href="#contact">拍照</a>
+        <a href="#abca">其他</a>
+        
+      </div>
+      <button class="btn-back" onclick="window.location.href='index.html'">返回首页</button>
+    </nav>
+
+    <!-- 内容区域 -->
+    <div class="content">
+      <section id="interests">
+        <p><h3>认识具有反复性，人们对一个事物的正确认识不是一帆风顺的，
+          往往要经过从实践到认识，再从认识到实践的多次反复才能完成</h3></p>
+      </section>
+
+      <div class="content-box">
+        <h3 id="about"><img src="图片素材/骑行logo.jpg" class="logo-icon">骑行</h3>
+        <p>穿越不同的自然景观，挑战各种路线，享受自由与速度带来的快感,感受到前所未有的放松与愉悦</p>
+        <!-- 图片 -->
+        <div class="image-gallery">
+          <img src="图片素材/骑行1.jpg" alt="黑白图" title="本人">
+          <img src="图片素材/骑行2.jpg" alt="骑行图" title="骑行">
+        </div>
+      </div>
+      
+      <div class="content-box">
+        <h3 id="projects"><img src="图片素材/看电影logo.jpg" class="logo-icon">看电影</h3>
+        <p>看电影是放松的方式之一，尤其喜爱那些剧情深刻、富有艺术感的电影。通过电影，可以体验不同的故事世界，感受演员们精彩的表演</p>
+        <div class="image-gallery">
+          <img src="图片素材/电影1.jpg" alt="电影图1" title="电影图1">
+          <img src="图片素材/电影2.jpg" alt="电影图2" title="电影图2">
+          <img src="图片素材/电影3.jpg" alt="电影图3" title="电影图3">
+        </div>
+      </div>
+      
+      <div class="content-box">
+        <h3 id="contact"><img src="图片素材/拍照logo.jpg" class="logo-icon">拍照</h3>
+        <p>用镜头捕捉生活中的美好瞬间，无论是自然风光还是日常生活的点滴，都能通过照片定格为永恒</p>
+        <div class="image-gallery">
+          <img src="图片素材/拍照1.jpg" alt="阁楼" title="阁楼">
+          <img src="图片素材/拍照2.jpg" alt="晚霞" title="晚霞">
+          <img src="图片素材/拍照3.jpg" alt="城市夜景" title="城市夜景">
+          <img src="图片素材/拍照4.jpg" alt="春天" title="春天">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--以下新增内容-->
+  <div class="content-box">
+    <h3 id="abca"><img src="图片素材/招租logo.jpg" class="logo-icon">广告位招租</h3>
+    <p>出售广告位 买到就是赚到</p>
+    <h4>厉害👍🏻666刷起来！！！ ⁶⁶⁶⁶⁶⁶     ⁶⁶⁶⁶⁶⁶     ⁶⁶⁶⁶⁶⁶<br>    
+      ⁶⁶⁶⁶⁶⁶     ⁶⁶66⁶⁶⁶⁶     ⁶⁶⁶⁶⁶⁶<br>    ⁶⁶666⁶⁶⁶⁶     ⁶⁶⁶⁶⁶⁶    
+       ⁶⁶⁶⁶⁶⁶卧槽      666    ⁶⁶⁶⁶⁶⁶     ⁶⁶⁶⁶⁶⁶<br>    ⁶⁶66⁶⁶⁶⁶     ⁶⁶⁶⁶⁶⁶没毛病，⁶⁶666⁶⁶⁶⁶</h4>
+    
+  
+       <div class="image-container">
+        <img src="图片素材/村委会.jpg" width="200px" height="200px">
+        <img src="图片素材/余额.jpg" width="200px" height="200px">
+      </div>
+
+      
+
+      <h4>最终</h4>
+<form id="homeplaceForm" onsubmit="return handleSubmit(event)">
+  结果：
+  <select name="homeplace" id="homeplace">
+    <option value="满意">满意</option>
+    <option value="优秀">优秀</option>
+  </select>
+  <input type="submit" value="提交" />
+</form>
+
+<!-- 显示提交结果 -->
+<div id="result" style="display:none;">
+  <h3>提交结果：</h3>
+  <p id="result-content"></p>
+</div>
+
+      
+      
+      
+
+      <a href="javascript:alert('1586420980@qq.com')" class="button-link">联系我们</a>
+
+      
+      
+    
+  <!-- 二级页面的内容部分 -->
+
+<!-- 返回顶部按钮 -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn">返回顶部</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
