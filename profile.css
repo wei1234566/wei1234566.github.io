@@ -105,7 +105,7 @@
   
   .image-gallery img {
     width: 300px; /* 增大图片 */
-    height: auto;
+    height: 400px;
     object-fit: cover;
     border: 2px solid #ffffff;
     border-radius: 5px;
